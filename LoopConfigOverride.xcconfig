@@ -15,3 +15,6 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED //DEBUG_FE
 //You can optionally add a configuration file like this, 1 directory above this file.
 //That will allow you to override congfiguration without changing your repository code here.
 #include? "../../LoopConfigOverride.xcconfig"
+
+// Add Build-Time features to compilation conditions
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) REMOTE_OVERRIDES_DISABLED
